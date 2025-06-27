@@ -1,97 +1,117 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 AwesomeProject02 - React Native UI Showcase
 
-# Getting Started
+This is my second React Native project built using **Expo** and **TypeScript**, showcasing various card components and UI interactions with clean styling and functionality. It’s designed to demonstrate real-world mobile UI components, links, and navigation experiences.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🚀 What I Built
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### 🔸 1. **Simple Flat Cards**
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Basic UI cards with static content to demonstrate foundational component layout.
 
-```sh
-# Using npm
-npm start
+### 🔸 2. **Horizontally Scrollable Cards**
 
-# OR using Yarn
-yarn start
-```
+A horizontally scrollable view of colorful cards showing flexibility and responsive layout.
 
-## Step 2: Build and run your app
+### 🔸 3. **Famous Places Cards**
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Stylized cards representing popular locations. This section focuses on layout — no interaction included (static design).
 
-### Android
+### 🔸 4. **Fancy Cards with “Read More”**
 
-```sh
-# Using npm
-npm run android
+Dynamic cards showing blog previews or article summaries.
 
-# OR using Yarn
-yarn android
-```
+- ✅ Includes a **“Read More”** button
+- 🔗 When clicked, it opens an external **website/blog link**
 
-### iOS
+### 🔸 5. **Contact List (WhatsApp UI Inspired)**
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Custom-styled contact list resembling WhatsApp UI.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+- 🧑 When a **user taps on a contact’s name**, it opens the person’s **Instagram profile** via external linking.
 
-```sh
-bundle install
-```
+---
 
-Then, and every time you update your native dependencies, run:
+## 📸 Screenshots
 
-```sh
-bundle exec pod install
-```
+### 🧾 Fancy Cards with Read More
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+![Fancy Cards](./screenshots/FancyCards.jpg)
 
-```sh
-# Using npm
-npm run ios
+### 📇 WhatsApp-style Contact List with Insta Links
 
-# OR using Yarn
-yarn ios
-```
+![Contacts Action Cards](./screenshots/ContactsActionCards.jpg)
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### 📦 Scrollable Cards
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+![Simple and Scrollable Cards](./screenshots/SImpleAndScrollableCards.jpg)
 
-## Step 3: Modify your app
+### 🔳 Action Cards
 
-Now that you have successfully run the app, let's make changes!
+![Action Cards](./screenshots/ActionCards.jpg)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 🛠 Tech Stack
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+- ⚛️ React Native (Expo)
+- 💬 TypeScript + JavaScript
+- 🖼 Static Image Assets
+- 🌐 External Linking using `Linking` API
+- 💡 Clean functional components
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📂 Folder Structure
 
-### Now what?
+AwesomeProject02/
+├── tests/
+├── .bundle/
+├── .vscode/
+├── android/
+├── ios/
+├── Assets/
+│ └── Images/
+├── Components/
+│ ├── FlatCards.jsx
+│ ├── ElevatedCards.jsx
+│ ├── FancyCard.jsx
+│ ├── ActionCard.tsx
+│ └── ContactList.tsx
+├── screenshots/
+│ ├── FancyCards.jpg
+│ ├── ContactsActionCards.jpg
+│ ├── ActionCards.jpg
+│ └── SImpleAndScrollableCards.jpg
+├── App.tsx
+├── index.js
+├── app.json
+├── images.d.ts
+├── README.md
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── (other config files)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## 👨‍💻 Author
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+**Muhammad Haris**  
+📧 Email: hariskhokhar975@gmail.com  
+🔗 GitHub: [@Muhammad-Haris-3](https://github.com/Muhammad-Haris-3)
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+## 💬 Future Improvements
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Add stack navigation between cards and contact views
+- Introduce API-based dynamic data
+- Create a sharable APK or PWA
+
+---
+
+## 📌 License
+
+This project is licensed under the **MIT License** — feel free to use and build on it.
