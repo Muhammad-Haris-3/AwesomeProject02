@@ -43,8 +43,8 @@ const ContactList = () => {
       <MainHeading text={'Contacts'} />
       <View style={styles.container}>
         {contacts.map(({ id, name, status, image, profileLink }) => (
-          <View style={styles.contactContainer}>
-            <View style={[styles.imgContainer, styles.subContainer]} key={id}>
+          <View key={id} style={styles.contactContainer}>
+            <View style={[styles.imgContainer, styles.subContainer]}>
               <Image source={image} style={styles.image} />
               <View style={styles.textContainer}>
                 <TouchableOpacity onPress={() => openProfile(profileLink)}>
